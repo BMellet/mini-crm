@@ -37,13 +37,19 @@ $(document).ready(function()
     
     $.each( customers, function( key, value ) 
     {
-    // for (var i=0; i<customers.length; i++)
-    // {
-        $('#main').append("<div class=\"ui card\">"value.id +"</br>"+value.first_name +"</br>"+value.last_name +"</br>"+value.company +"</br>"+valeur.phone +"</br></div>");
+    
+        $('#main').append("<div class=\"ui card\">"+value.id +"</br>"
+            +value.first_name +"</br>"
+            +value.last_name +"</br>"
+            +value.role+"</br>"
+            +value.company +"</br>"
+            +value.phone +"</br>"
+            +value.email+"</br>"
+            +value.description+"</div>");
 
     });
 
 
-    // };
+
 
 });
